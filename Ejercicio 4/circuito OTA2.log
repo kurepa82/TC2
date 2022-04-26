@@ -1,0 +1,7 @@
+Circuit: * D:\UTN\TC2\TC2\Ejercicio 4\circuito OTA2.asc
+
+Questionable use of curly braces in "g1 io- io+ v+ v- {gm}"
+    Error: undefined symbol in: "[gm]"
+Error on line 9 : g:x1:1 n001«:io-» n002«:io+» n001«:v+» n002«:v-» gm)
+	 Unknown parameter "gm"
+Fatal Error: Missing value of transconductance for "x1:g1"

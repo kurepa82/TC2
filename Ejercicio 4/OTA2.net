@@ -1,0 +1,21 @@
+* D:\UTN\TC2\TC2\Ejercicio 4\OTA2.asc
+V1 N001 0 AC 1
+A1 N002 0 P001 0 0 0 N002 0 OTA Vlow=-1
+R1 P001 P002 10
+V2 P002 0 200µ
+Xx5 N001 N002 N001 N002 otadif params: gm=200u
+
+* block symbol definitions
+.subckt otadif V+ V- Io- Io+
+G1 Io- Io+ V+ V- {gm}
+C1 Io- Io+ 0.25p
+R1 Io- Io+ 5Meg
+C2 V+ v2 0.1p
+.ends otadif
+
+* gm2
+* >
+* Ib
+.ac dec 100 10 100k
+.backanno
+.end
